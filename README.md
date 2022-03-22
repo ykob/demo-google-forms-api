@@ -1,4 +1,4 @@
-# demo-google-forms-api
+# google-forms-api-demo
 
 ## Project setup
 ```
