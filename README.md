@@ -7,6 +7,7 @@ https://developers.google.com/forms/api
 ## .env
 
 ```
-API_KEY=hogehoge
-FORM_ID=fugafuga
+VUE_APP_API_KEY=hogehoge
+VUE_APP_CLIENT_ID=fugafuga
+VUE_APP_FORM_ID=hogefuga
 ```
