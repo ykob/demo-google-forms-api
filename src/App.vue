@@ -7,10 +7,23 @@
 import { defineComponent } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
 
+declare const google: any
 export default defineComponent({
   name: 'App',
   components: {
     HelloWorld,
+  },
+  data: () => ({
+    isSignedIn: false,
+  }),
+  mounted() {
+    google.accounts.id.initialize({
+      client_id: process.env.VUE_APP_CLIENT_ID,
+      callback: (response: any) => {
+        console.log(response)
+      },
+    })
+    google.accounts.id.prompt()
   },
 })
 </script>
